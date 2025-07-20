@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #cdccca;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 110%;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-links li a:hover {
+    color: #CDCCCA;
+    font-size: 130%;
+}
+
+.present{
+    width: 30%; 
+    height: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px 20px;
+    background:linear-gradient(to bottom, #333333, #888888, #cdccca);
+    color: white;
+}
+
+.hero p {
+    font-family:"Bebas Neue", sans-serif;
+    font-size:200%;
+    margin-bottom: 0.5rem;
+    color: #e8e8e8;
+}
+
+.content {
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.content1 {
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: #3f3f3f;
+}
+
+.content1 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 300%;
+    color: #3f3f3f;
+}
+
+.content h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 150%;
+    color: #3f3f3f;
+}
+
+.content p{
+    font-family: "Playfair Display", serif;
+    font-size: 120%;
+    text-align: justify;
+}
+
+.content1 p{
+    font-family: "Playfair Display", serif;
+    font-size: 120%;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+    color: #ccc;
+    margin-top: 60px;
+}
+
+.footer-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-imagenes img {
+    height: 120px; /* O ajusta a lo que te parezca visualmente correcto */
+    width: auto;  /* Esto permite que el ancho se ajuste automáticamente */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Asegura que la imagen quepa sin deformarse */
+}
+
+.footer-imagenes img:hover {
+    transform: scale(1.1);
+}

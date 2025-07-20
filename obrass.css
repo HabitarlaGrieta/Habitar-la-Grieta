@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #cdccca;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 110%;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-links li a:hover {
+    color: #CDCCCA;
+    font-size: 130%;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background:linear-gradient(to bottom, #333333, #888888, #cdccca);
+    color: white;
+}
+
+.hero h1 {
+    font-family:"Bebas Neue", sans-serif;
+    font-size:800%;
+    margin-bottom: 0.5rem;
+    color: #e8e8e8;
+}
+
+.hero p {
+    font-family:"Bebas Neue", sans-serif;
+    font-size:200%;
+    margin-bottom: 0.5rem;
+    color: #e8e8e8;
+}
+
+.fichas-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.ficha-tecnica {
+    background-color: #e3e3e3;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 20px;
+    height: 400px;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.ficha-tecnica.invertida {
+    flex-direction: row-reverse;
+}
+
+.ficha-tecnica .carrusel {
+    flex: 1 1 45%;
+    max-width: 45%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.carrusel .imagenes {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(51, 51, 51, 0.7);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.carrusel .prev { left: 0; }
+.carrusel .next { right: 0; }
+
+.ficha-tecnica .info {
+    flex: 1 1 50%;
+    max-width: 50%;
+    overflow-y: auto;
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    padding-right: 1%;
+}
+
+.ficha-tecnica .info h2 {
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 0;
+}
+
+.ficha-tecnica p {
+    margin: 6px 0;
+}
+
+.ficha-tecnica .info::-webkit-scrollbar {
+    width: 6px;
+}
+.ficha-tecnica .info::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.ficha-tecnica .info::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+    color: #ccc;
+    margin-top: 60px;
+}
+
+.footer-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-imagenes img {
+    height: 120px; /* O ajusta a lo que te parezca visualmente correcto */
+    width: auto;  /* Esto permite que el ancho se ajuste automáticamente */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Asegura que la imagen quepa sin deformarse */
+}
+
+.footer-imagenes img:hover {
+    transform: scale(1.1);
+}
