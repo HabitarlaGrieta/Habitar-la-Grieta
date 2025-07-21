@@ -123,3 +123,30 @@ body {
 .cerrar:hover {
     color: #cdccca;
 }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+    color: #ccc;
+    margin-top: 60px;
+}
+
+.footer-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-imagenes img {
+    height: 120px; /* O ajusta a lo que te parezca visualmente correcto */
+    width: auto;  /* Esto permite que el ancho se ajuste automáticamente */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Asegura que la imagen quepa sin deformarse */
+}
+
+.footer-imagenes img:hover {
+    transform: scale(1.1);
+}
