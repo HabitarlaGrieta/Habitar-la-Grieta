@@ -150,3 +150,65 @@ footer {
 .footer-imagenes img:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .center-image img {
+        height: 70px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    .hero h1 {
+        font-size: 300%;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .footer-imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-imagenes img {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .modal-contenido {
+        width: 95%;
+        max-height: 70vh;
+    }
+
+    .cerrar {
+        font-size: 30px;
+        top: 20px;
+        right: 20px;
+    }
+}
