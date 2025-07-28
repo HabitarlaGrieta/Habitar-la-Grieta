@@ -152,7 +152,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    header {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
@@ -169,27 +169,38 @@ footer {
     .nav-links {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
         padding: 0;
-        margin: 0;
     }
 
     .nav-links li a {
-        font-size: 1.1rem;
-        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        padding: 0.3rem;
     }
 
     .hero h1 {
-        font-size: 300%;
-    }
-
-    .galeria {
-        padding: 20px;
+        font-size: 2rem;
+        text-align: center;
     }
 
     .contenedor-galeria {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        padding: 0 10px;
+    }
+
+    .footer-imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-imagenes img {
+        height: 70px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        text-align: center;
     }
 
     .modal-contenido {
@@ -197,17 +208,59 @@ footer {
         max-height: 70vh;
     }
 
-    .footer-imagenes {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .cerrar {
+        font-size: 30px;
+        top: 20px;
+        right: 20px;
     }
+}
 
-    .footer-imagenes img {
-        height: 80px;
-    }
+/* Icono del menú hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
 
-    footer p {
-        font-size: 0.9rem;
-    }
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-image img {
+    height: 60px;
+  }
+
+  .logo {
+    width: 60%;
+  }
 }

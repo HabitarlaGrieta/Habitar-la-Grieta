@@ -20,6 +20,8 @@
             <img src="imagenes/HABITARLOGOBLANCO2.png" alt="Imagen Central" style="height: 100px; width: auto;">
         </div>
 
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="artistas.html">Artistas</a></li>
@@ -513,6 +515,10 @@ Corporalidades Textuales y Textualidades Corporales es una exploración a travé
             modal.style.display = "none";
         }
     });
+    function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
     </script>
 
 </body>

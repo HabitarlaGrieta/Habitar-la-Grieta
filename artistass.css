@@ -222,68 +222,115 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    header {
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
         gap: 1rem;
     }
 
     .logo {
-        width: 50%;
+        width: 60%;
+    }
+
+    .center-image img {
+        height: 70px;
     }
 
     .nav-links {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        gap: 1rem;
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
+        gap: 0.5rem;
+        padding: 0;
     }
 
     .nav-links li a {
-        font-size: 1.2rem;
-        padding: 0.5rem;
+        font-size: 1rem;
+        padding: 0.3rem;
     }
 
-    .present {
-        width: 90%;
-        padding: 1rem;
-        margin-top: 5%;
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
     }
 
-    .content, .content1 {
-        padding: 4% 6%;
-    }
-
-    .content h1 {
-        font-size: 180%;
-    }
-
-    .content1 h2 {
-        font-size: 200%;
-    }
-
-    .footer {
-        padding: 10px;
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
     }
 
     .footer-imagenes {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .footer-imagenes img {
-        height: 60px;
+        height: 70px;
     }
 
-    .derechos {
-        font-size: 12px;
+    footer p {
+        font-size: 0.9rem;
         text-align: center;
     }
+
+    .modal-contenido {
+        width: 95%;
+        max-height: 70vh;
+    }
+
+    .cerrar {
+        font-size: 30px;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Icono del menú hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-image img {
+    height: 60px;
+  }
+
+  .logo {
+    width: 60%;
+  }
 }

@@ -16,6 +16,7 @@
             <img src="imagenes/EAD10LOGO_Mesa de trabajo 1 b.png" alt="Generacion 10" class="logo">
         </div>
         
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="artistas.html">Artistas</a></li>
@@ -117,5 +118,12 @@
          </div>
         <p>&copy; 2025 Archivo Habitar la Grieta</p>
     </footer>
+
+    <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+</script>
 </body>
 </html>
